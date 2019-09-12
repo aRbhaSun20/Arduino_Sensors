@@ -1,7 +1,10 @@
+const Button_Pin = 8;
+
+
 void setup(){
 
 Serial.begin(9600);
-pinMode(8,INPUT);
+pinMode(Button_Pin,INPUT);
 }
 
 
