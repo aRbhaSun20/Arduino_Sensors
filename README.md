@@ -1,6 +1,6 @@
 # Arduino
 
-## > Arduino is an **embeded microcontroller**  with a lots of pins to operate on let it be the
+## Arduino is an **embeded microcontroller**  with a lots of pins to operate on let it be the
  
  -  *digital pins*, 
  - *analog pins*,
