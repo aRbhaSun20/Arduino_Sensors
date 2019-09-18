@@ -4,7 +4,7 @@
  
  -  *digital pins*, 
  - *analog pins*,
- - *I@C pins*
+ - *I2C pins*
 > formed on combinations , or be it the various Vcc or Gnd pins.
 
 ### Interaction with sensors
