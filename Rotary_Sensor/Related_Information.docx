@@ -1,0 +1,55 @@
+
+Name: Rotary Sensor
+
+Principle:
+A rotary encoder, also called a shaft encoder, is an electro-mechanical device that converts the 
+angular position or motion of a shaft or axle to analog or digital output signals[1].
+
+
+Type of protocol:SERIAL ANALOG
+
+ PIN Connection: Analog pins
+
+Type of Sensor: Passive
+
+Codes:
+#define ROTARY_ANGLE_SENSOR A0
+#define LED 3  //the Grove - LED is connected to PWM pin D3 of Arduino
+#define ADC_REF 8 //reference voltage of ADC is 5v.If the Vcc switch on the seeeduino
+                    //board switches to 3V3, the ADC_REF should be 3.3
+#define GROVE_VCC 5 //VCC of the grove interface is normally 5v
+#define FULL_ANGLE 300 //full value of the rotary angle is 300 degrees
+
+void setup()
+{
+    Serial.begin(9600);
+    pinMode(ROTARY_ANGLE_SENSOR, INPUT);
+    pinMode(LED,OUTPUT);   
+}
+
+void loop()
+{   
+    float voltage;
+    int sensor_value = analogRead(ROTARY_ANGLE_SENSOR);
+    voltage = (float)sensor_value*ADC_REF/1023;
+    float degrees = (voltage*FULL_ANGLE)/GROVE_VCC;
+    Serial.println("The angle between the mark and the starting position:");
+    Serial.println(degrees);
+
+    int brightness;
+    brightness = map(degrees, 0, FULL_ANGLE, 0, 255);
+    analogWrite(LED,brightness);
+    delay(500);
+}
+
+
+
+Ratings:
+
+Voltage 
+		Min:4.75
+		Max5.25:
+		Typical:5.0
+Rotary Angle
+		Min:0
+		Max:300

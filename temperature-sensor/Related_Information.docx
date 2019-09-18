@@ -1,0 +1,37 @@
+
+Name: Temperature sensor
+
+Principle:The Grove - Temperature Sensor uses a Thermistor to detect the ambient temperature. 
+The resistance of a thermistor will increase when the ambient temperature decreases. It's this characteristic
+ that we use to calculate the ambient temperature. The detectable range of this sensor is -40 - 125ºC, 
+ and the accuracy is ±1.5ºC.
+
+Type of protocol:Serial
+
+pin connection:Analog Pins
+
+Type of sensor:Active
+
+codes:
+#include <math.h>		//for log
+int a;
+float temperature;
+int B=3975;                  //B value of the thermistor
+float resistance;
+void setup()
+{
+}
+void loop()
+{
+    a=analogRead(0);
+    resistance=(float)(1023-a)*10000/a; //get the resistance of the sensor;
+    temperature=1/(log(resistance/10000)/B+1/298.15)-273.15; // to K → C
+    delay(1000);
+}
+
+Ratings:
+
+Voltage: 3.3 ~ 5V
+    • Max power rating at 25℃: 300mW
+    • Zero power resistance: 10 KΩ
+    • Operating temperature range: -40 ~ +125 ℃

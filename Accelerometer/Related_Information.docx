@@ -1,0 +1,47 @@
+Name: 3-Axis digital accelerometer (+-1.5 g)
+
+Principle:
+Measures the proper accelerations oaf a device.
+an accelerometer behaves as a damped mass on a spring. When the accelerometer experiences an acceleration,
+ the mass is displaced to the point that the spring is able to accelerate the mass at the same rate as the casing. 
+ The displacement is then measured to give the acceleration.
+
+Type of protocol:Serial
+
+ PIN Connection: I2C Pins
+
+Type of Sensor:Active
+
+Codes:
+
+#include <Wire.h> 								//for I2C pin interface
+#include "MMA7660.h" 							// for accelerometer
+MMA7660 acc;  									// declare a variable
+void setup()
+{
+	acc.init();  
+
+}
+void loop()
+{
+	int8_t x;										//inbuilt variables  	
+	int8_t y;
+	int8_t z;
+
+	float ax,ay,az;
+	
+acc.getXYZ(&x,&y,&z);
+	
+acc.getAcceleration(&ax,&ay,&az);
+
+	delay(500);
+}
+
+Ratings:
+Working voltage: 3.0 - 5.5V
+    • Off Mode Current: 0.4μA
+    • Standby Mode Current: 2μA
+    • Active Mode Current: 47 μA at 1 ODR
+    • Test Range: ±1.5g
+    • Sensitivity: 21LSB/g
+    • Suli-compatible Library

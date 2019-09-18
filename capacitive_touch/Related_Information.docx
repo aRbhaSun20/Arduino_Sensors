@@ -1,0 +1,41 @@
+Name: Capacitive Touch Sensor
+
+Principle:  working principle of capacitors
+
+
+Type of protocol:SERIAL DIGITAL
+
+ PIN Connection:ALL Digital Pins
+
+Type of Sensor:passive
+
+Codes:
+const int TouchPin=2;
+const int ledPin=3;
+
+void setup() {
+
+    pinMode(ledPin,OUTPUT);
+    Serial.begin(9600);
+}
+
+void loop() {
+    int sensorValue = digitalRead(TouchPin);
+    if(sensorValue==1)
+    {
+        Serial.print("switch is on");
+    }
+    else
+    {
+        Serial.print("switch is off");
+        
+    }
+    Serial.print("\n");
+    delay(50);
+}
+
+Ratings:
+Operating Voltage: 2.0 - 5.5V
+    • Operating Current(Vcc=3V):1.5 - 3.0μA
+    • Operating Current(VDD=3V):3.5 - 7.0μA
+    • Output Response Time: 60 – 220mS

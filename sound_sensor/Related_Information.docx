@@ -1,0 +1,44 @@
+
+Name: sound sensor
+
+Principle:it uses the vibrations and changes into current otherwise voltage
+
+Type of protocol:SERIAL ANALOG
+
+ PIN Connection:Analog pins
+
+Type of Sensor:passive
+
+Codes:
+const int pinAdc = A0;
+
+void setup()
+{
+    Serial.begin(115200);
+    //Serial.println("Grove - Sound Sensor Test...");
+}
+
+void loop()
+{
+    long sum = 0;
+    for(int i=0; i<32; i++)
+    {
+        sum += analogRead(pinAdc);
+    }
+
+    sum >>= 5;
+
+    Serial.println(sum);
+    delay(1000);
+}
+Ratings:
+
+Operating voltage 3~5V
+Operating current 0.5~3 mA
+Response time 20-30 milliseconds
+Weight 4 g
+
+
+
+
+
