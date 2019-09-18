@@ -8,17 +8,20 @@ Ultrasonic ultra1(7);
 //
 //ADXL335 accelerometer;
 
+const int LED1 13;
+const int LED2 12;
+const int LED3 11;
+const int LED4 10;
 
 void setup() {
   // put your setup code here, to run once:
 lcd.begin(16,2);
 Serial.begin(9600);
 
-pinMode(13,OUTPUT);
-pinMode(12,OUTPUT);
-pinMode(11,OUTPUT);
-pinMode(10,OUTPUT);
-pinMode(9,OUTPUT);
+pinMode(LED1,OUTPUT);
+pinMode(LED2,OUTPUT);
+pinMode(LED3,OUTPUT);
+pinMode(LED4,OUTPUT);
 
 
 
@@ -28,34 +31,34 @@ void loop() {
   // put your main code here, to run repeatedly:
 long ultc1;
 ultc1 = ultra1.MeasureInCentimeters();
-digitalWrite(13,LOW);
-digitalWrite(12,LOW);
-digitalWrite(11,LOW);
-digitalWrite(10,LOW);
+digitalWrite(LED1,LOW);
+digitalWrite(LED2,LOW);
+digitalWrite(LED3,LOW);
+digitalWrite(LED4,LOW);
 
 
 if(ultc1 < 85){
   ultc1=ultc1+2;//from 0-84
-  digitalWrite(13,HIGH);
+  digitalWrite(LED1,HIGH);
 }
   else if(ultc1 < 140){
     ultc1=ultc1+3;//from 85-139
-    digitalWrite(12,HIGH);
+    digitalWrite(LED2,HIGH);
   }
     else if(ultc1 < 195){
        ultc1=ultc1+4;//from 140-194
-       digitalWrite(11,HIGH);
+       digitalWrite(LED3,HIGH);
     }
         else if (ultc1 <=330){
            ultc1=ultc1+2;//from 195-330
-           digitalWrite(10,HIGH);
+           digitalWrite(LED4,HIGH);
         }
             else{
               ultc1=0;
-              digitalWrite(13,HIGH);
-              digitalWrite(12,HIGH);
-              digitalWrite(11,HIGH);
-              digitalWrite(10,HIGH);
+              digitalWrite(LED1,HIGH);
+              digitalWrite(LED2,HIGH);
+              digitalWrite(LED3,HIGH);
+              digitalWrite(LED4,HIGH);
               
               }
           
