@@ -1,0 +1,21 @@
+Name:Relay
+
+
+Principle: a semiconductor - Relay module is a digital normally-open switch. Through it, you can control circuit of high voltage with low voltage, say 5V on the controller
+
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:ALL pins
+
+Type of Sensor: active
+
+
+
+Ratings:
+
+Operating Voltage	5V	
+Operating Current	60mA	
+Relay Life	100,000 Cycle	
+Max Switching Voltage	250VAC/30VDC	
+Max Switching Current	5A

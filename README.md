@@ -24,3 +24,4 @@ interaction of the Arduino UNO with varied number of sensors be it the
 8.  Temperature_sensor
 11. Ultra_Sonic Range Finder
 12. Stepper_motor
+11. Relay

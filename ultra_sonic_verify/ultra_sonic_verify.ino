@@ -37,30 +37,33 @@ digitalWrite(LED3,LOW);
 digitalWrite(LED4,LOW);
 
 
-if(ultc1 < 85){
-  ultc1=ultc1+2;//from 0-84
-  digitalWrite(LED1,HIGH);
-}
-  else if(ultc1 < 140){
-    ultc1=ultc1+3;//from 85-139
-    digitalWrite(LED2,HIGH);
-  }
-    else if(ultc1 < 195){
-       ultc1=ultc1+4;//from 140-194
-       digitalWrite(LED3,HIGH);
-    }
-        else if (ultc1 <=330){
-           ultc1=ultc1+2;//from 195-330
-           digitalWrite(LED4,HIGH);
-        }
-            else{
-              ultc1=0;
-              digitalWrite(LED1,HIGH);
-              digitalWrite(LED2,HIGH);
-              digitalWrite(LED3,HIGH);
-              digitalWrite(LED4,HIGH);
+map(ultc1,0,85,);
+
+
+// if(ultc1 < 85){
+//   ultc1=ultc1+2;//from 0-84
+//   digitalWrite(LED1,HIGH);
+// }
+//   else if(ultc1 < 140){
+//     ultc1=ultc1+3;//from 85-139
+//     digitalWrite(LED2,HIGH);
+//   }
+//     else if(ultc1 < 195){
+//        ultc1=ultc1+4;//from 140-194
+//        digitalWrite(LED3,HIGH);
+//     }
+//         else if (ultc1 <=330){
+//            ultc1=ultc1+2;//from 195-330
+//            digitalWrite(LED4,HIGH);
+//         }
+//             else{
+//               ultc1=0;
+//               digitalWrite(LED1,HIGH);
+//               digitalWrite(LED2,HIGH);
+//               digitalWrite(LED3,HIGH);
+//               digitalWrite(LED4,HIGH);
               
-              }
+//               }
           
 Serial.print("Distance:");
 Serial.println(ultc1);
