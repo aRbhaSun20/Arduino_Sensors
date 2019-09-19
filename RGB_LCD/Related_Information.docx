@@ -1,0 +1,53 @@
+﻿Name: Stepper_Motor
+
+
+Principle:It's a four-phase eight-stepping stepper motor, and you can easily control this stepper motor via the drive board.
+
+
+Type of protocol:SERIAL DIGITAL
+
+ PIN Connection:
+IN1:8
+IN2:9
+IN3:10
+IN4:11
+VCC AND AM:5V
+GND:GND
+
+Type of Sensor:ACTIVE
+
+
+Ratings:
+Features¶
+Low noise
+Large torque
+Built-in gearbox
+
+Rating:
+
+Operating Voltage
+5V
+Phase
+4
+Reduction ratio
+1/64
+Step Angle
+5.625°/64
+Diameter
+28mm / Nema 11
+Idle In-traction Frequency
+>500HZ
+Idle Out-traction Frequency
+>1000HZ
+Resistance
+21±7%
+Noise
+≤40dB
+Drive mode
+four-phase eight-stepping
+
+
+
+
+
+
