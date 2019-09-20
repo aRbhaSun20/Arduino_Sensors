@@ -9,7 +9,7 @@
 
 ### Interaction with sensors
 
-####> In this session we are gonna have a well introduction to the basic codes we require for 
+#### > In this session we are gonna have a well introduction to the basic codes we require for 
 interaction of the Arduino UNO with varied number of sensors be it the
 1.  Accelerometer
 2.  Active_Buzzer
