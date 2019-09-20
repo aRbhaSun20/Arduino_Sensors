@@ -6,11 +6,12 @@
  - *analog pins*,
  - *I2C pins*
 > formed on combinations , or be it the various Vcc or Gnd pins.
-
+---
 ### Interaction with sensors
 
-#### > In this session we are gonna have a well introduction to the basic codes we require for 
+> In this session we are gonna have a well introduction to the basic codes we require for 
 interaction of the Arduino UNO with varied number of sensors be it the
+---
 1.  Accelerometer
 2.  Active_Buzzer
 2.  Capacitive Touch Sensor
