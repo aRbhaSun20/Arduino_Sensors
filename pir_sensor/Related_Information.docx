@@ -1,0 +1,17 @@
+Name:PIR_SENSOR
+
+Principle: A passive infrared sensor (PIR sensor) is an electronic sensor that measures infrared (IR) light radiating from objects in its field of view. They are most often used in PIR-based motion detectors.
+
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:ALL pins
+
+Type of Sensor:passive
+
+Ratings:
+
+Operating Voltage		5V
+Operating Angle 		180
+Response Time 			+-500ms
+Operating Current 		
