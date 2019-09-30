@@ -163,5 +163,5 @@ interaction of the Arduino UNO with varied number of sensors be it the
 23. Stepper_motor
 24. Temperature_sensor
 25. Ultra_Sonic Range Finder
-26. 
+26. Spy_Camera
 ```
