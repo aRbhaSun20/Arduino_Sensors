@@ -1,0 +1,30 @@
+Name:Thumb_Stick Sensor
+
+Principle: The Analog Joystick is similar to two potentiometers
+connected together, one for the vertical movement (Y-axis) and 
+other for the horizontal movement (X-axis). The joystick also
+comes with a Select switch. It can be very handy for retro gaming,
+robot control or RC cars
+
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:
+ the thumb_Stick consists of 5 pins:
+    1st PIN = GND
+    2nd PIN = Vcc = 5V
+    3rd PIN = Vrx = A0
+    4th PIN = Vry = A1
+    5th PIN = SW = 2
+
+Type of Sensor:passive
+
+
+Ratings:
+
+Operating Voltage: 5V
+Internal Potentiometer value: 10k
+2.54mm pin interface leads
+Dimensions: 1.57 in x 1.02 in x 1.26 in (4.0 cm x 2.6 cm x 3.2 cm)
+Operating temperature: 0 to 70 °C
+ 

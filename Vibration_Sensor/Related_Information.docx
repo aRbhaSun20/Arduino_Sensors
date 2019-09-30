@@ -1,0 +1,27 @@
+Name:Vibration Sensor
+
+Principle: Usually at any angle switch is ON state, by the vibration or movement, the rollers of
+the conduction current in the switch will produce a movement or vibration, causing the
+current through the disconnect or the rise of the resistance and trigger circuit. The
+characteristics of this switch is usually general in the conduction state briefly disconnected
+resistant to vibration, so it's high sensitivity settings by IC, customers according to their
+sensitivity requirements for adjustments. 
+
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:
+    Vcc = 5V
+    GND
+    Digital PIN
+
+Type of Sensor:passive
+
+
+Ratings:
+
+The default state of the swith is close
+Digital output Supply voltage:3.3V-5V
+On-board indicator LED to show the results
+On-board LM393 chip
+SW-420 based sensor, normally closed type vibration sensor 

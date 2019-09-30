@@ -1,0 +1,27 @@
+Name:Thermistor_10k Sensor
+
+Principle: Measure temperature using a resistor!
+
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:ALL pins
+
+Type of Sensor:passive
+
+Working:
+    If you are not getting correct readings, check that the
+    10K resistor is placed between VCC and A0, and the thermistor 
+    is between A0 and ground. Check you have a 10K Thermistor and 
+    that you are using a 'standard' NTC thermistor. On a "5V" 
+    microcontroller like classic Arduino or Metro 328, use 5V for 
+    the VCC pin. On 3.3V microcontrollers like Feather or Arduino Zero, 
+    use 3.3V for the VCC pin.
+
+
+Ratings:
+
+Operating Voltage:	200 VDC max
+Operating Current: 	100 mA max
+Operating magnetic field:
+Sensitivity: 15mm max

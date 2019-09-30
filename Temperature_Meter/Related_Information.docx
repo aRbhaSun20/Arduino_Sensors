@@ -1,0 +1,69 @@
+
+Name: Temperature_Meter_sensor
+
+Principle:The Grove - Temperature Sensor uses a Thermistor to detect the ambient temperature. 
+The resistance of a thermistor will increase when the ambient temperature decreases. It's this characteristic
+ that we use to calculate the ambient temperature. The detectable range of this sensor is -40 - 125ºC, 
+ and the accuracy is ±1.5ºC.
+
+Type of protocol:Serial
+
+pin connection:Analog Pins
+
+Type of sensor:Active
+
+codes:
+#include <math.h>		//for log
+int a;
+float temperature;
+int B=3975;                  //B value of the thermistor
+float resistance;
+void setup()
+{
+}
+void loop()
+{
+    a=analogRead(0);
+    resistance=(float)(1023-a)*10000/a; //get the resistance of the sensor;
+    temperature=1/(log(resistance/10000)/B+1/298.15)-273.15; // to K → C
+    delay(1000);
+}
+
+Ratings:
+
+        PARAMETER                       VALUE                       
+Resistance value at 25 °C           3.3 to 470K 
+Tolerance on R25-value              ± 2; ± 3; ± 5 %
+B25/85-value                        2880 to 4570 K
+Tolerance on B25/85-value           ± 0.5 to ± 3 %
+Operating temperature range:
+°C At zero power dissipation;
+continuously                        - 40 to + 125
+At zero power dissipation;
+for short periods                       <= 150
+Response time (in oil)                  = 1.2 s
+Thermal time constant 
+(for information only)                      15 s
+Dissipation factor 
+(for information only)                   7 mW/K 
+                                        8.5 mW/K                  
+                                    (for R25-value  680 )
+Maximum power dissipation                   5000mW
+at 55 °C 500 mW
+
+Converting to Temperature
+
+    Finally, of course, we want to have the temperature reading, not just a resistance! If you just need to do a 
+    quick comparison circuit (if temperature is below X do this, if its above Y do that), you can simply use the
+    temperature/resistance table which correlates the resistance of the thermistor to the temperature.
+
+    However, you probably want actual temperature values. To do that we'll use the Steinhart-Hart equation , which 
+    lets us do a good approximation of converting values. Its not as exact as the thermistor table 
+    (it is an approximation) but its pretty good around the temperatures that this thermistor is used.
+
+    However, this equation is fairly complex, and requires knowing a lot of variables that we don't have for this 
+    thermistor. Instead we will use the simplified B parameter equation.
+   
+    For this one we only need to know To (which is room temperature, 25 °C = 298.15 K) B (in this case 3950, the 
+    coefficient of the thermistor), and Ro (the resistance at room temp, in this case 10Kohm). We plug in R 
+    (resistance measured) and get out T (temperature in Kelvin) which is easy to convert to °C

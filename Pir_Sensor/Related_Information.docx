@@ -1,0 +1,75 @@
+Name:PIR_Sensor
+
+Principle: 
+    PIR sensor detects a human being moving around within 
+    approximately 10m from the sensor. This is an average value, as
+    the actual detection range is between 5m and 12m.PIR are 
+    fundamentally made of a pyro electric sensor, which can detect 
+    levels of infrared radiation. 
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:
+ 
+ Vcc = 5V;
+ GND
+ OUTPUT digital pins
+
+
+Type of Sensor:Active
+
+
+Ratings:
+
+Operating Voltage:	5V to 20V
+Operating Current: 	65 mA max
+Output Voltage:     3.3V
+Delay Time:         5s to 5 minutes
+Operating Temperature:  -15 to +70 degree Celsius.
+Sensitivity: 110 degree cone.A knob is given to adjust the 
+            sensitivity; we can vary from 3 meter to 7 meters perpendicular 
+            to senor. The sensitivity reduces as we move either sides 
+            of the sensor.
+Quiescent current:
+    The Quiescent current is the current consumed from the supply, when the 
+    sensor is not detecting any motion or when it is in idle. It consumes 
+    less than 50 uA, which makes the sensor battery friendly.
+
+Specifications:
+    Trigger modes:
+
+The PIR module has two trigger modes: 
+Single trigger / non-repeat mode and repeat trigger. These two modes can be 
+access by changing the jumper position given in the module.
+
+Single Trigger Mode / Non-repeat Mode:
+
+    When the PIR sensor is set in single trigger mode (and the timer knob /
+    delay time is set for 5 seconds (say)), when a human is detected the 
+    output turns HIGH for 5 seconds and turns LOW.
+
+Repeat Trigger Mode:
+
+    When the PIR sensor is set in repeat trigger mode, when a human is 
+    detected the output turns HIGH the timer counts for 5 seconds, but 
+    when another human is detected with in those 5 seconds the timer 
+    reset to zero and counts another 5 seconds after 2nd human is detected.
+
+Block Time:
+
+    The block time is the time interval where the sensor is disabled or will 
+    not detect motion. The block time for HC-SR501 is 3 seconds by default.
+
+    This occurs after the delay time (which was set by timer knob) the output goes
+    LOW for 3 seconds; during this interval no motion will be detected. After the 
+    3 seconds (LOW) the sensor will be ready to detect motion again.
+    In other words, when the sensor detects motion the output goes HIGH, the output
+    remains HIGH as per the timer knob (say 5 seconds), after 5 seconds the PIR 
+    sensor goes LOW, the LOW signal will remain for 3 seconds regardless of the
+    new motion if any.
+
+Lens Size:
+
+    The white dome structure which encloses the pyroelectric sensor is called
+    Fresnel lenses, which increase the detection range and it looks opaque. 
+    It measures 23 mm in diameter.

@@ -1,0 +1,23 @@
+Name:Potentiometer_1X4_Keypad_Circular Sensor
+
+Principle: 
+A keypad is one of the most commonly used input devices in microprocessor applications. 
+In a standard keypad wired as an X-Y switch matrix, normally-open switches connect a row to a 
+column when pressed.
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:
+    1st wire = GND
+    Digital Pin #9, would be the #1 key on your keypad
+    Digital Pin #10, would be the #2 key on your keypad
+    Digital Pin #11, would be the #3 key on your keypad
+    Digital Pin #12, would be the #4 key on your keypad.
+
+Type of Sensor:passive
+
+Ratings:
+
+Operating Voltage:	5 V max
+Operating Current: 	10 mA max
+

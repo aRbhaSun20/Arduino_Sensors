@@ -1,0 +1,36 @@
+Name:Soil_Temperature_Sensor
+
+Principle: The soil moisture sensor consists of two probes that measure the 
+volume of water in the soil. The two probes allow the electric current to 
+pass through the soil and, according to its resistance, measures the 
+moisture level of the soil.
+
+Working:
+When there is more water, the soil conducts more electricity, which means 
+that the resistance will be less. So the moisture level will be higher. 
+Dry soil reduces conductivity. So, when there is less water, the soil 
+conducts less electricity, which means it has more resistance. So the 
+moisture level will be lower.
+
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:
+    Red to VCC
+    White to SIG
+    Black to GND
+
+Type of Sensor:passive
+
+
+Ratings:
+
+    Temperature measuring range: -40 ~ +123.8°C
+    Moisture measuring range: 0 ~ 100% RH
+    Temperature accuracy: ±0.4°C
+    Moisture accuracy: ±3%RH
+    Cable in length: 1m
+    Wires: Red = VCC (3-5VDC), Black or Green = Ground, Yellow = Clock, 
+    Blue = Data.
+    Absolute RH accuracy: +/- 3.5% RH
+    Low power consumption (typically 30 μW)

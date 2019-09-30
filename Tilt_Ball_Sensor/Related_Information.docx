@@ -1,0 +1,37 @@
+Name:Tilt_Ball_Sensor
+
+Principle:A Tilt Sensor switch is an electronic device that detects the 
+orientation of an object and gives its output High or Low accordingly.
+Basically, it has a mercury ball inside it which moves and makes the 
+circuit. So tilt sensor can turn on or off the circuit based on the
+orientation.
+
+Working:
+    CASE 1: NOT TILTED
+
+        Initially, when it is in NOT tilted position as shown in the
+        image below, it gives LOW output because of the liquid mercury
+         complete the circuit by connecting the two electrodes.
+          When the output is LOW on-board LED remain ON.
+
+    CASE 2: TILTED
+
+        When it is inclined in a particular direction or angle, the 
+        liquid mercury breaks the contact between the metal electrodes
+         and the circuit gets open. Hence, we get HIGH output in this 
+         condition and the onboard LED turns off.
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:ALL pins
+
+Type of Sensor:passive
+
+
+Ratings:
+
+ Adopts high sensitivity ball switch SW-520D angle sensor
+- comparator output,high drive ability,over 15ma current
+- working voltage:3.3V-12V
+- with screw mounting hole
+ Adopts LM393 comparator
