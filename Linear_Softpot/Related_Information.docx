@@ -1,0 +1,33 @@
+Name:Linear_Softpot
+
+Principle: Based upon Voltage Diveider
+
+Connections: By connecting pin 1 to ground and pin 3 to 5V, we cause the voltage on the middle pin to rise from 0V to 5V as the wiper moves from the bottom of the softpot (towards the terminals) to the top. Reversing the power supply can swap that relationship around.
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+the SoftPot mainly consists of the 3 pins i.e
+By supplying a voltage to the outer pins of the SoftPot, we can generate a variable voltage on the middle wiper pin.
+A 10kΩ resistor between the wiper and ground pulls the SoftPot's analog output signal down. This ensures that the sensor's output value doesn't "float" -- a term we use when the voltage of a signal is bouncing around with no real certainty.
+
+ PIN Connection:
+
+- Connect the softpot's outside pins to 5V and GND (the outer pin with an arrow
+indicator should be connected to GND). 
+- Connect the middle pin to A0
+
+Type of Sensor:passive
+
+
+Ratings:
+
+Resistance, standard : 10kΩ (lenght >300mm 20kΩ)
+Resistance Range, customized 1kΩ to 100kΩ
+Power Rating (depending on size)
+(varies with length and temperature) 1 Watt max. @ 25°C
+Operating Temperature : -40°C to +50°C
+Dielectric Value No affect @ 500 VAC, 1 minute
+Humidity No affect @ 95% RH, 4hrs <50°C
+Altitude 10,000 meters 
+IP Rating (Pot itself) 66
+Shock No closures >10msec @ 100g half-sine on four sides 
+Vibration No closure >10msec @ 1 hour random sine test 

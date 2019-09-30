@@ -1,0 +1,50 @@
+Name:FingerPrint_Sensor
+
+Principle: The R305 is one kind of fingerprint sensor module used in biometrics for security in fingerprint detection
+ as well as verification. These devices are mainly used in safes where there is a high-powered DSP chip used in the 
+ rendering of image, feature-finding, searching and calculation by connecting it to any microcontroller with the help of TTL serial,
+    & send data packets to get photos, notice prints, search and hash. The enrollment of new fingers can be stored directly within
+ the flash memory of on board.
+
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:
+ the pins inthe fingerprint sensor:
+
+DNC pin is connected by a white wire
+VCC pin is connected by a red wire
+TX pin is connected by a blue wire
+RX pin is connected by a green wire
+GND pin is connected by a black wire
+
+the pins interface with arduino:
+
+The black wire is connected to the GND pin of the Arduino
+The red wire is connected to the 5V of the Arduino
+Green wire is connected to the digital pin-2 of the Arduino
+The white wire is connected to the digital pin-3 of the Arduino
+
+Type of Sensor:passive
+
+
+Ratings:
+
+The fingerprint sensor is an optical type
+The interface is USB1.1/ TTL logical level (UART)
+The speed of scanning is 0.5 sec
+The speed of verification is 0.3 sec
+The capacity storage is 1000
+The security level is 5
+The baud rate of RS232 is 4800BPS ~115200BPS variable
+Current is typical 50 mA, and peak 80mA
+The corresponding technique is 1: N
+Fixed indicators-15KV bright green backlight
+The life of the sensor is 100 million times
+The dimension is 44.1 X 20 X 23.5mm
+The size of the character file is 256 bytes
+The template size is 512 bytes
+The FRR (False Rejection Rate) is <1.0%
+The FAR (False Acceptance Rate) is 0.001%
+Voltage is 4.2 to 6.0 VDC
+Operating surroundings temperature is -20° C to 40° C

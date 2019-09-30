@@ -1,0 +1,26 @@
+Name:Flex_Sensor
+
+Principle:This flex sensor is a variable resistor like no other. The resistance of the flex sensor
+ increases as the body of the component bends.
+
+Flat (nominal resistance)
+45˚ Bend (increased resistance)
+90˚ Bend (resistance increased further)
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:ALL pins
+
+Type of Sensor:passive
+
+
+Ratings:
+
+Operating voltage of FLEX SENSOR: 0-5V.
+Can operate on LOW voltages.
+Power rating : 0.5Watt (continuous), 1 Watt (peak)
+Life: 1 million.
+Operating temperature: -45ºC to +80ºC.
+Flat Resistance: 25K Ω
+Resistance Tolerance: ±30%
+Bend Resistance Range: 45K to 125K Ohms(depending on bend)
