@@ -1,0 +1,18 @@
+Name:Door Sensor
+
+Principle: Almost all door and window sensors use a "reed switch" to determine when a protected area has been breached. Reed switches were invented in Bell Telephone Laboratories in 1936, and are used in everything from pedal keyboards to laptops (ever wonder how your computer knows to go to sleep when you close the lid? That's a reed switch working!). A reed switch consists of a set of electrical connectors placed slightly apart. When a magnetic field is placed parallel to the electrical connectors, it pulls them together, closing the circuit.
+
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:ALL pins
+
+Type of Sensor:passive
+
+
+Ratings:
+
+Operating Voltage:	200 VDC max
+Operating Current: 	100 mA max
+Operating magnetic field:
+Sensitivity: 15mm max

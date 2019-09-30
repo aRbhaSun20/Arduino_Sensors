@@ -1,0 +1,20 @@
+Name:Foot_Switch Sensor
+
+Principle: Acts just like a Switch
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:
+ GND
+ Vcc : 5V
+ Digital pin
+
+Type of Sensor:passive
+
+
+Ratings:
+
+Operating Voltage:	250 VAC
+Operating Current: 	6  A max
+Operating magnetic field:
+Sensitivity: 15mm max

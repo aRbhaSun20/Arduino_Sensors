@@ -1,0 +1,39 @@
+Name:Door Sensor
+
+Principle: The Hall effect sensor works on the principle of the Hall effect, which states that 
+whenever a magnetic field is applied in a direction perpendicular to the flow of electric 
+current in a conductor, a potential difference is induced. This voltage can be used to detect 
+whether the sensor is in the proximity of a magnet or not.
+
+There are many types of Hall effect sensors, and certain types are better for certain applications.
+For applications where the speed of detection is not crucial, ordinary Hall effect sensors like
+44E can be used. However, for applications that involve high-speed detection, like in the case of
+speedometers, high-frequency Hall effect sensors like US5881 or US1881 should be used. There are
+two main types of Hall effect sensors: latching and non-latching.
+
+Operation:
+The US1881 is a latching Hall effect sensor. The sensor gives out an output HIGH (5V) voltage 
+whenever the north pole of a magnet is brought close to it. Even when the magnet is removed,
+the sensor still outputs a HIGH voltage and does not go LOW (0V) until the south pole of the magnet
+is brought close to it. These sensors that latch on to a particular state are called latched 
+Hall effect sensors.
+
+The US5881 is a non-latching Hall effect sensor. The sensor gives an output HIGH voltage whenever 
+the north pole of a magnet is brought close to it, and switches LOW whenever the magnet is removed. 
+
+ PIN Connection:
+ 
+ Vcc = 5V
+ GND
+ digital Connected to any PIN (interupt pin)
+ Furthermore, a 10K resistor is connected between the VCC and Vout pins of the Hall effect sensor. 
+ This is done to pull the output of the Hall effect sensor to 5V. 
+
+Type of Sensor:passive
+
+
+Ratings:
+
+
+Operating Voltage	4.5V to 24V
+Operating Temperature Range	-40°C to 85°C 

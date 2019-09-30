@@ -1,0 +1,29 @@
+Name:Pulse Sensor
+
+Principle:
+    The sensor consists of a super bright red LED and light detector. 
+    The LED needs to be super bright as the maximum light must pass spread 
+    in finger and detected by detector. Now, when the heart pumps a pulse of 
+    blood through the blood vessels, the finger becomes slightly more opaque and
+    so less light reached the detector. With each heart pulse the detector signal
+    varies. This variation is converted to electrical pulse. This signal is 
+    amplified and triggered through an amplifier which outputs +5V logic level 
+    signal. The output signal is also indicated by a LED which blinks 
+    on each heart beat.
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:
+    RED wire = +3V to +5V
+    BLACK wire = GND
+    PURPLE wire = Signal
+
+Type of Sensor:passive
+
+
+Ratings:
+
+Operating Voltage:	200 VDC max
+Operating Current: 	100 mA max
+Operating magnetic field:
+Sensitivity: 15mm max

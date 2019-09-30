@@ -1,0 +1,49 @@
+Name:IR_Distance_Sensor
+
+Principle: 
+An IR distance sensor uses a beam of infrared light
+to reflect off an object to measure its distance. 
+
+The distance is calculated by using triangulation of the beam 
+of light. The sensor consists of an IR LED and a light detector 
+or PSD (Position Sensing Device). When the beam of light gets
+reflected by an object, the reflected beam will reach 
+the light detector and an ‘optical spot’ will form on the PSD.
+
+Working:
+When the position of the object changes, the angle of the 
+reflected beam and the position of the spot on 
+the PSD changes as well.
+
+The sensor has a built-in signal processing circuit.
+This circuit processes the position of the optical spot on 
+the PSD to determine the position (distance) of the reflective object.
+It outputs an analog signal which depends on the position of the 
+object in front of the sensor.
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+    2.3 V = 10cm;
+    0.4 V = 80cm;
+    range from > 10 cm
+
+PIN Connection:Analog Pins
+
+noisy(add a capacitor of 10uF or more)Connect the positive 
+lead of the capacitor to the Vcc wire connection and the negative
+lead to the GND wire connection 
+
+1 (Yellow)	A0
+2 (Black)	GND
+3 (Red)	5V
+
+Type of Sensor:passive
+
+
+Ratings:
+
+
+Operating voltage	4.5 to 5.5 V
+Operating current	30 mA
+Measuring range	10 to 80 cm
+Output type	Analog

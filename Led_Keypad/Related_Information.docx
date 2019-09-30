@@ -1,0 +1,35 @@
+Name:Led_Keypad
+
+Principle: 
+A keypad is one of the most commonly used input devices in microprocessor applications. 
+In a standard keypad wired as an X-Y switch matrix, normally-open switches connect a row to a 
+column when pressed. If a keypad has 12 keys, it is wired as 3 columns by 4 rows. 
+A 16 key pad would have 4 columns by 4 rows.
+
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:
+D2 - Pin1
+
+D3 - Pin2
+
+D4 - Pin3
+
+D5 - Pin4
+
+D6 - Pin 5
+
+D7 - Pin 6
+
+D8 - Pin 7
+
+D9 - Pin 8
+
+Type of Sensor:passive
+
+
+Ratings:
+
+Operating Voltage:	5 V max
+Operating Current: 	10 mA max

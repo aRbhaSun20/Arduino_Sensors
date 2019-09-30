@@ -1,0 +1,58 @@
+Name:IR_Sensor
+
+Principle:
+    A photo diode gives response in term of change in resistance when 
+    light falls on it. That change is measured in terms of voltage.
+
+Working:
+
+    This is a multipurpose infrared sensor which can be used for
+    color detection.The sensor provides a digital as well as 
+    analog output. An on board LED is used to indicate the presence 
+    of an object. This digital output can be directly connected to
+    an Arduino, Raspberry Pi or any other microcontroller to 
+    read the sensor output.
+
+    IR sensors are highly susceptible to ambient light and the IR sensor
+    on this sensor is suitably covered to reduce effect of ambient light 
+    on the sensor. The on board potentiometer should be used to 
+    calibrate the sensor.
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+Applications:
+
+    An IR LED and a Photo diode are used in a combination for proximity and 
+    color detection. An IR LED (transmitter) emits IR light, that light gets 
+    reflected by the object, the reflected light is received by an IR receiver 
+    (Photo Diode). Amount of reflection and reception varies with the distance. 
+    This difference causes to change in input voltage through IR input. 
+    This variation in input voltage is used for proximity detection.
+
+    For color detection application: The amount of reflected light depends upon 
+    the color of surface from which it is reflected. The reflection is different 
+    for different colored surfaces. This makes it a color detector.
+
+PIN Connection:ALL pins
+
+Type of Sensor:passive
+
+IR Sensor have four pins:
+
+    1. VCC +5V
+
+    2. GND
+
+    3. D connects with any digital pin of Arduino when 
+    IR pair use as Digital Sensor.
+
+    4. A connects with analog input pin of Arduino when 
+    IR pair use as Analog Sensor
+
+Ratings:
+
+Operating Voltage: 3.0V – 5.0V
+Detection range: 2cm – 30cm (Adjustable using potentiometer)
+Current Consumption:at 3.3V : ~23 mA,at 5.0V: ~43 mA
+Active output level: Outputs Low logic level when obstacle is detected
+On board Obstacle Detection LED indicator

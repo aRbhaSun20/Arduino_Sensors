@@ -1,0 +1,33 @@
+Name:Door Sensor
+
+Introduction:
+    It's fairly high resolution (480p video and 1280x720 photo) module, 
+    with a driver board that is about 1 square inch in size, with a
+    microSD card holder. The image module is about the size of a 
+    cell phone camera - the body being just 6.2mm x 6.2mm - and 
+    has a stick-on back so it's easy to mount in a doorbell or behind
+    a teddy bear's eye (might as well be creative). There's a power 
+    LED and an 'activity' LED that lets you know what its doing.
+
+Principle: Almost all door and window sensors use a "reed switch" to determine when a protected area has been breached. Reed switches were invented in Bell Telephone Laboratories in 1936, and are used in everything from pedal keyboards to laptops (ever wonder how your computer knows to go to sleep when you close the lid? That's a reed switch working!). A reed switch consists of a set of electrical connectors placed slightly apart. When a magnetic field is placed parallel to the electrical connectors, it pulls them together, closing the circuit.
+
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:
+    Connect the red wire to 3.7V-5VDC and the black wire to ground.
+    Then use the white wire to control the camera. When touched to 
+    ground for under half a second, the camera will take a photo 
+    and stick it in a PHOTO folder on the SD card, numbered from
+    PIC000.jpg up to PIC999.jpg. The red LED will blink briefly.
+    When the trigger wire is touched for over a half second, 
+    it will start taking a video clip with audio from the mini 
+    microphone. The LED will stay on during the entire recording.
+    Touch it again for half a second+ to stop.
+
+Type of Sensor:passive
+
+
+Ratings:
+
+Operating Voltage:	5 VDC max
