@@ -315,32 +315,34 @@ interaction of the Arduino UNO with varied number of sensors be it the
 
 28. Stepper_motor
 
-  
-29. Temperature_Meter
-
-
-
-30. Temperature_sensor
-
-
-
-31. Thermistor_10k
-
-
-
-32. Thumb_stick
-
-
-
-33. Tilt_sensor
-  
-
-
-34. Ultra_Sonic Range Finder
+29. Servo_Motor
 
   
+30. Temperature_Meter
 
-35. Vibration_sensor
+
+
+31. Temperature_sensor
+
+
+
+32. Thermistor_10k
+
+
+
+33. Thumb_stick
+
+
+
+34. Tilt_sensor
+  
+
+
+35. Ultra_Sonic Range Finder
+
+  
+
+36. Vibration_sensor
 
   
 

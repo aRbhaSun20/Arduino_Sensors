@@ -1,0 +1,20 @@
+Name:Servo_Motor
+
+Principle: 
+
+
+
+Type of protocol:SERIAL DIGITAL & ANALOG
+
+ PIN Connection:
+    Red to VCC
+    White to SIG
+    Black to GND
+    pin 9 Servo_Motor
+    A0 Pot
+
+Type of Sensor:passive
+
+
+Ratings:
+
